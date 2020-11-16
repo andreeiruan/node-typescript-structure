@@ -8,7 +8,8 @@
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -29,7 +30,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.3.0",
     "jest": "^26.0.1",
+    "lint-staged": "^10.5.1",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.0",
     "ts-node-dev": "^1.0.0-pre.49",
